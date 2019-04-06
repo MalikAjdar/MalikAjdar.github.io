@@ -223,6 +223,14 @@ a {
   line-height: 24px;
 }
 
+.index p {
+  font-family: "OpenSans",sans-serif;
+  font-size: 15px;
+  color: #464646;
+  letter-spacing: 0.15px;
+  line-height: 30px;
+}
+
 .stick {
   display: flex;
   justify-content: space-between;
@@ -232,6 +240,7 @@ a {
 .specification {
   max-width: 510px;
 }
+
 
 table {
   border-spacing: 50px 30px;
