@@ -223,12 +223,26 @@ a {
   line-height: 24px;
 }
 
+
+.index a:hover {
+  background: #F0C52E;
+}
+
+.index a:active {
+  opacity: 0.3;
+}
+
 .index p {
   font-family: "OpenSans",sans-serif;
   font-size: 15px;
   color: #464646;
   letter-spacing: 0.15px;
   line-height: 30px;
+}
+
+.link-info {
+  background: url("../img/line.svg") 50% 60% no-repeat;
+  padding: 0 30px;
 }
 
 .stick {
@@ -259,6 +273,7 @@ table {
 .settings th {
   font-family: "OpenSans",sans-serif;
   font-size: 13px;
+  font-weight: 100px;
   color: #464646;
   letter-spacing: 0.13px;
   line-height: 20px;
@@ -294,13 +309,12 @@ table {
 }
 
 
-
-.main-delivery .link-info {
+.block-links {
   flex-direction: column;
   max-width: 150px;
 }
 
-.main-deliveri .link-info a:nth-child(2) {
+.block-links a:nth-child(2) {
   margin: 30px 0;
 }
 
