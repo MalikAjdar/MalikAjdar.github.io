@@ -241,9 +241,11 @@ a {
   max-width: 510px;
 }
 
-.settings {
-
+table {
+  border-spacing: 50px 30px;
+  margin-left: -50px;
 }
+
 
 .settings td {
   font-family: "OpenSans",sans-serif;
