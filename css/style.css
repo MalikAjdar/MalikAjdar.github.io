@@ -54,6 +54,14 @@ a {
   background: #f7e296;
 }
 
+.header a:hover{
+  opacity: 0.6;
+}
+
+.header a:active {
+  opacity: 0.3;
+}
+
 .head {
   margin: 50px;
 }
@@ -89,7 +97,7 @@ a {
 }
 
 .header-compare {
-  margin-left: 217px;
+  margin-left: 210px;
 }
 
 .header-cart {
@@ -212,7 +220,7 @@ a {
   line-height: 56px;
 }
 
-.index a {
+.index .link-info {
   font-family: "Gilroy", sans-serif;
   font-size: 18px;
   font-weight: bold;
@@ -223,11 +231,11 @@ a {
 }
 
 
-.index a:hover {
+.index .link-info:hover {
   background: #F0C52E;
 }
 
-.index a:active {
+.index .link-info:active {
   opacity: 0.3;
 }
 
@@ -285,6 +293,16 @@ table {
   justify-content: space-between;
   margin: 0 20px 50px 20px;
 }
+
+.options .link {
+  font-family: "Gilroy" , sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  letter-spacing: 0.18px;
+  line-height: 24px;
+}
+
 .main-delivery {
   width: auto;
   height: 300px;
@@ -298,7 +316,7 @@ table {
   justify-content: space-between;
 }
 
-.sponsors {
+.partners {
   display: flex;
   max-width: 1160px;
   margin: 150px auto;
@@ -310,14 +328,32 @@ table {
   border: 1px solid #E5E5E5;
 }
 
+.dji:hover {
+  background: url("../img/djibrought.png") 50% 50% no-repeat;
+}
+
+.spg:hover {
+  background: url("../img/spgbrought.png") 50% 50% no-repeat;
+}
+
+.gopro:hover {
+  background: url("../img/goprobrought.png") 50% 50% no-repeat;
+}
+
+.vive:hover {
+  background: url("../img/vivebrought.png") 50% 50% no-repeat;
+}
 
 .block-links {
   flex-direction: column;
+  position: relative;
   max-width: 150px;
 }
 
-.block-links a:nth-child(2) {
-  margin: 30px 0;
+.block-links .link-info:active {
+  color: #F0C52E;
+  background: #000000;
+  opacity: 1; 
 }
 
 .delivery-block {
