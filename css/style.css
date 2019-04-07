@@ -35,9 +35,7 @@ body {
   margin: 0;
 
   font-family: "Gilroy", "OpenSans", sans-serif;
-  font-size: 15px;
-  font-weight: 100;
-  line-height: 30px;
+
   color: #000000;
 
   background-color: #ffffff;
@@ -221,6 +219,7 @@ a {
   color: #000000;
   letter-spacing: 3.5px;
   line-height: 24px;
+  text-transform: uppercase;
 }
 
 
@@ -235,13 +234,14 @@ a {
 .index p {
   font-family: "OpenSans",sans-serif;
   font-size: 15px;
+  font-weight: 100;
   color: #464646;
   letter-spacing: 0.15px;
   line-height: 30px;
 }
 
 .link-info {
-  background: url("../img/line.svg") 50% 60% no-repeat;
+  background: url("../img/line.svg") 50% 45% no-repeat;
   padding: 0 30px;
 }
 
@@ -266,6 +266,7 @@ table {
   font-family: "Gilroy",sans-serif;
   font-size: 36px;
   color: #000000;
+  font-weight: 400;
   letter-spacing: 0.36px;
   line-height: 48px;
 }
@@ -273,7 +274,7 @@ table {
 .settings th {
   font-family: "OpenSans",sans-serif;
   font-size: 13px;
-  font-weight: 100px;
+  font-weight: 100;
   color: #464646;
   letter-spacing: 0.13px;
   line-height: 20px;
@@ -306,6 +307,7 @@ table {
 .slide {
   justify-content: space-around;
   margin-left: 30px;
+  border: 1px solid #E5E5E5;
 }
 
 
