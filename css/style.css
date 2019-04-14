@@ -50,8 +50,9 @@ a {
 .header {
   position:relative;
   width: 1160px;
+  height: 150px;
   margin: auto;
-  background: #f7e296;
+  background: #F7E296;
 }
 
 .header a:hover{
@@ -166,7 +167,7 @@ a {
   margin-left: 111px;
 }
 
-
+/*
 .links-item {
   list-style: none;
   font-family: "OpenSans",sans-serif;
@@ -174,11 +175,11 @@ a {
   letter-spacing: 0.15px;
   line-height: 36px;
 }
+*/
 
 .main-content {
   max-width: 1160px;
   margin: 0 auto;
-  color: #000000;
 }
 /*inner-->*/
 .breadcrumbs {
@@ -253,16 +254,40 @@ a {
   padding: 0 30px;
 }
 
-.stick {
+.one {
+  width: 1160px;
+  height: 140px;
+  margin: auto;
+  margin-bottom: -62px;
+  background-color: #F7E296;
+}
+
+.one span {
   display: flex;
-  justify-content: space-between;
-  margin: 0 50px 50px 50px;
+  justify-content: flex-end;
+  font-family: "Gilroy", sans-serif;
+  font-size: 180px;
+  color: #FFFFFF;
+  letter-spacing: 0.36px;
+  font-weight: bold;
+  margin-right: 40px;
+}
+
+.stick {
+  position: relative;
+  margin-bottom: 50px;
 }
 
 .specification {
   max-width: 510px;
+  margin-left: 560px;
 }
 
+.monopod {
+  position: absolute;
+  top: -80px;
+  left: 85px;
+}
 
 table {
   border-spacing: 50px 30px;
@@ -303,6 +328,10 @@ table {
   line-height: 24px;
 }
 
+.options .link:active {
+  opacity: 0.3;
+}
+
 .main-delivery {
   width: auto;
   height: 300px;
@@ -313,7 +342,23 @@ table {
   max-width: 1160px;
   margin: auto;
   display: flex;
-  justify-content: space-between;
+}
+
+.block-links {
+  flex-direction: column;
+  max-width: 150px;
+}
+
+.block-links .link-info:active {
+  color: #F0C52E;
+  background: #000000;
+  opacity: 1;
+}
+
+.delivery-block {
+  max-width: 465px;
+  margin-left: 182px;
+
 }
 
 .partners {
@@ -329,35 +374,19 @@ table {
 }
 
 .dji:hover {
-  background: url("../img/djibrought.png") 50% 50% no-repeat;
+  background: url("../img/djibright.png") 50% 50% no-repeat;
 }
 
 .spg:hover {
-  background: url("../img/spgbrought.png") 50% 50% no-repeat;
+  background: url("../img/spgbright.png") 50% 50% no-repeat;
 }
 
 .gopro:hover {
-  background: url("../img/goprobrought.png") 50% 50% no-repeat;
+  background: url("../img/goprobright.png") 50% 50% no-repeat;
 }
 
 .vive:hover {
-  background: url("../img/vivebrought.png") 50% 50% no-repeat;
-}
-
-.block-links {
-  flex-direction: column;
-  position: relative;
-  max-width: 150px;
-}
-
-.block-links .link-info:active {
-  color: #F0C52E;
-  background: #000000;
-  opacity: 1; 
-}
-
-.delivery-block {
-  max-width: 450px;
+  background: url("../img/vivebright.png") 50% 50% no-repeat;
 }
 
 .main-info {
@@ -425,6 +454,14 @@ table {
   color: #ffffff;
 }
 
+.footer a:hover{
+  opacity: 0.6;
+}
+
+.footer a:active {
+  opacity: 0.3;
+}
+
 .logo-footer {
   margin-top: 50px;
 }
@@ -489,11 +526,12 @@ table {
 
 .footer-bottom {
   display: flex;
+  justify-content: flex-end;
 }
+
 .footer-social {
   opacity: 0.2;
-  list-style: none;
-  margin-left: 516px;
+  margin-right: 490px;
 }
 
 .social::before {
@@ -514,8 +552,4 @@ table {
 
 .twit::before {
   background: url("../img/twitter.svg") 50% 50% no-repeat;
-}
-
-.logo-html {
-  margin-left: 493px;
 }
