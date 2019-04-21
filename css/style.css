@@ -614,21 +614,21 @@ table {
   font-weight: bold;
   letter-spacing: 3.6px;
   line-height: 24px;
-  margin-left: -80px;
+  width: 33%;
 }
 
 .footer-warranty {
   margin: 0 20px;
 }
 
-.footer-bottom {
+.social-block {
   display: flex;
   justify-content: flex-end;
 }
 
-.footer-social {
+.social-link {
   opacity: 0.2;
-  margin-right: 490px;
+  width: 50%;
 }
 
 .social::before {
