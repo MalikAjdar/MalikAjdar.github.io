@@ -21,7 +21,7 @@
         </form>
 
         <div class="header-user">
-          <a class="user header-login" href="#">Войти</a>
+          <a class="user header-login" href="#">Выйти</a>
           <a class="user header-compare" href="compare.html">Сравнить</a>
           <a class="user header-cart" href="cart.html">Корзина</a>
         </div>
@@ -33,7 +33,7 @@
           <li><a class="link header-contacts" href="contacts.html">Контакты</a></li>
         </ul>
       </section>
-
+      <!--
       <div class="section-links">
         <ul class="links-item">
           <li><a class="item" href="inner.html">Виртуальная реальность</a></li>
@@ -44,78 +44,77 @@
           <li><a class="item" href="inner.html">Квадрокоптеры</a></li>
         </ul>
       </div>
+    -->
     </nav>
   </header>
 
   <main class="main inner">
     <section class="main-content">
       <section class="inner-header">
-        <ul class="breadcrumbs">
-          <li><a class="breadcrumbs-link index" href="index.html">Главная</a></li>
-          <li><a class="breadcrumbs-link catalog" href="inner.html">Каталог товаров</a></li>
-          <li class="breadcrumbs-link monopod-current">Моноподы для селфи</li>
-        </ul>
+        <a class="breadcrumbs index" href="index.html">Главная</a>
+        <a class="breadcrumbs catalog" href="inner.html">Каталог товаров</a>
+        <a class="breadcrumbs monopod-current">Моноподы для селфи</a>
       </section>
 
-      <form class="filter" method="post" action="#">
-        <fieldset>
-          <legend>Цвет:</legend>
-          <ul>
-            <li>
-              <input type="checkbox" name="black" id="filter-black" checked>
-              <label for="filter-black">
-                Черный
-              </label>
-            </li>
-            <li>
-              <input type="checkbox" name="white" id="filter-white">
-              <label for="filter-white">
-                Белый
-              </label>
-            </li>
-            <li>
-              <input type="checkbox" name="blue" id="filter-blue" checked>
-              <label for="filter-blue">
-                Синий
-              </label>
-            </li>
-            <li>
-              <input type="checkbox" name="red" id="filter-red" checked>
-              <label for="filter-red">
-                красный
-              </label>
-            </li>
-            <li>
-              <input type="checkbox" name="pink" id="filter-pink">
-              <label for="filter-pink">
-                Розовый
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend>Bluetooth</legend>
-          <ul>
-            <li>
-              <input type="radio" name="Bluetooth" value="ok" id="filter-ok" checked>
-              <label for="filter-ok">
-                есть
-              </label>
-            </li>
-            <li>
-              <input type="radio" name="Bluetooth" value="no" id="filter-no">
-              <label for="filter-no">
-                нет
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <button type="submit">Показать</button>
-      </form>
-
       <section class="catalog-item">
-        <ul class="catalog-list">
-          <li class="link-item">
+        <form class="filter" method="post" action="#">
+          <fieldset>
+            <legend>Цвет:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="black" id="filter-black" checked>
+                <label for="filter-black">
+                  Черный
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" name="white" id="filter-white">
+                <label for="filter-white">
+                  Белый
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" name="blue" id="filter-blue" checked>
+                <label for="filter-blue">
+                  Синий
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" name="red" id="filter-red" checked>
+                <label for="filter-red">
+                  красный
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" name="pink" id="filter-pink">
+                <label for="filter-pink">
+                  Розовый
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Bluetooth</legend>
+            <ul>
+              <li>
+                <input type="radio" name="Bluetooth" value="ok" id="filter-ok" checked>
+                <label for="filter-ok">
+                  есть
+                </label>
+              </li>
+              <li>
+                <input type="radio" name="Bluetooth" value="no" id="filter-no">
+                <label for="filter-no">
+                  нет
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
+
+        <section class="catalog-list">
+          <div class="link-item">
             <a href="#">
               <img src="item/item-1.png" alt="lubitel" width="360" height="380">
               <div class="price">
@@ -123,9 +122,7 @@
                 <span>500 руб.</span>
               </div>
             </a>
-          </li>
 
-          <li class="link-item">
             <a href="#">
               <img src="item/item-2.png" alt="prof" width="360" height="380">
               <div class="price">
@@ -133,9 +130,7 @@
                 <span>1500 руб.</span>
               </div>
             </a>
-          </li>
 
-          <li class="link-item">
             <a href="#">
               <img src="item/item-3.png" alt="potop" width="360" height="380">
               <div class="price">
@@ -143,9 +138,7 @@
                 <span>2500 руб.</span>
               </div>
             </a>
-          </li>
 
-          <li class="link-item">
             <a href="#">
               <img src="item/item-4.png" alt="zamnoi" width="360" height="380">
               <span class="item-badge">NEW</span>
@@ -154,34 +147,34 @@
                 <span>4900 руб.</span>
               </div>
             </a>
-          </li>
-        </ul>
+
+          </div>
+        </section>
+
+        <section>
+          <figure>
+            <a href="#" class="button gallery-button gallery-button-back">Назад</a>
+          </figure>
+
+          <ul class="pagination-list">
+            <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+            <li class="pagination-item"><a href="#">2</a></li>
+            <li class="pagination-item"><a href="#">3</a></li>
+
+          </ul>
+          <figure>
+            <a href="" class="button gallery-button gallery-button-next">Вперед</a>
+          </figure>
+        </section>
+
       </section>
-
-      <section>
-        <figure>
-          <a href="#" class="button gallery-button gallery-button-back">Назад</a>
-        </figure>
-
-        <ul class="pagination-list">
-          <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
-          <li class="pagination-item"><a href="#">2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-
-        </ul>
-        <figure>
-          <a href="" class="button gallery-button gallery-button-next">Вперед</a>
-        </figure>
-      </section>
-
-    </section>
   </main>
 
   <footer class="footer">
     <section class="footer-content">
-      <a href="index.html"><img src="img/logo-footer.svg" class="logo-footer" alt="Device" width="170" height="50"></a>
+      <a href="index.html"><img src="img/logo-F.svg" class="logo-footer" alt="Device" width="170" height="50"></a>
       <div class="footer-user">
-        <a class="user footer-login" href="login-link">Войти</a>
+        <a class="user footer-login" href="login-link">Выйти</a>
         <a class="user footer-compare" href="compare.html">Сравнить</a>
         <a class="user footer-cart" href="cart.html">Корзина</a>
       </div>

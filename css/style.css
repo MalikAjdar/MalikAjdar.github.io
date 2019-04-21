@@ -183,6 +183,7 @@ a {
 }
 /*inner-->*/
 .breadcrumbs {
+  display: inline-block;
   list-style: none;
   opacity: 0.3;
   font-family: "OpenSans",sans-serif;
@@ -191,8 +192,22 @@ a {
   line-height: 24px;
 }
 
-.catalog-list {
-  list-style: none;
+.catalog-item {
+  display: flex;
+  width: 1100px;
+  margin: auto;
+}
+
+.filter {
+  width: 270px;
+}
+
+.link-item {
+  width: 850px;
+}
+
+.link-item a {
+  justify-content: space-between;
 }
 
 .price {
@@ -255,14 +270,6 @@ a {
 }
 
 .one {
-  width: 1160px;
-  height: 140px;
-  margin: auto;
-  margin-bottom: -62px;
-  background-color: #F7E296;
-}
-
-.one span {
   display: flex;
   justify-content: flex-end;
   font-family: "Gilroy", sans-serif;
@@ -271,6 +278,11 @@ a {
   letter-spacing: 0.36px;
   font-weight: bold;
   margin-right: 40px;
+  background-image: linear-gradient(#F7E296,#F7E296);
+  width: 1160px;
+  height: 140px;
+  margin: auto;
+  margin-bottom: -62px;
 }
 
 .stick {
@@ -283,7 +295,7 @@ a {
   margin-left: 560px;
 }
 
-.monopod {
+.monopod-slider {
   position: absolute;
   top: -80px;
   left: 85px;
@@ -316,20 +328,105 @@ table {
 .options {
   display: flex;
   justify-content: space-between;
-  margin: 0 20px 50px 20px;
+  margin-bottom: 50px;
 }
 
 .options .link {
+  width: 160px;
   font-family: "Gilroy" , sans-serif;
   font-size: 18px;
   font-weight: bold;
   color: #000000;
   letter-spacing: 0.18px;
   line-height: 24px;
+  text-align: center;
 }
 
 .options .link:active {
   opacity: 0.3;
+}
+
+.options .link::before {
+  display: block;
+  content: "";
+  background: #F7E296;
+  width: 160px;
+  height: 160px;
+}
+
+.options a {
+  position: relative;
+}
+
+.options .virt::after {
+  position: absolute;
+  top: 53px;
+  left: 31px;
+  display: block;
+  content: "";
+  background: url("../img/virt.svg") 50% 50% no-repeat;
+  width: 97px;
+  height: 55px;
+}
+
+.options .monopod::after {
+  position: absolute;
+  top: 41px;
+  left: 38px;
+  display: block;
+  content: "";
+  background: url("../img/monopod.svg") 50% 50% no-repeat;
+  width: 87px;
+  height: 117px;
+}
+
+.options .camera::after {
+  position: absolute;
+  top: 38px;
+  left: 49px;
+  display: block;
+  content: "";
+  background: url("../img/camera.svg") 50% 50% no-repeat;
+  width: 72px;
+  height: 88px;
+}
+
+.options .bracelet::after {
+  position: absolute;
+  top: 49px;
+  left: 28px;
+  display: block;
+  content: "";
+  background: url("../img/bracelet.svg") 50% 50% no-repeat;
+  width: 97px;
+  height: 55px;
+}
+
+.options .clock::after {
+  position: absolute;
+  top: 32px;
+  left: 55px;
+  display: block;
+  content: "";
+  background: url("../img/clock.svg") 50% 50% no-repeat;
+  width: 57px;
+  height: 98px;
+}
+
+.options .drone::after {
+  position: absolute;
+  top: 49px;
+  left: 13px;
+  display: block;
+  content: "";
+  background: url("../img/drone.svg") 50% 50% no-repeat;
+  width: 133px;
+  height: 70px;
+}
+
+.options .link:hover::before{
+  background: #F0C52E;
+  opacity: 1;
 }
 
 .main-delivery {
