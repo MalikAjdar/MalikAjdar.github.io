@@ -269,6 +269,15 @@ a {
   padding: 0 30px;
 }
 
+.block-links .link-info {
+  position: relative;
+}
+
+.link-info .delivery-slide {
+  position: absolute;
+  bottom: 30px;
+}
+
 .one {
   display: flex;
   justify-content: flex-end;
@@ -328,7 +337,7 @@ table {
 .options {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin-bottom: 150px;
 }
 
 .options .link {
@@ -339,7 +348,7 @@ table {
   color: #000000;
   letter-spacing: 0.18px;
   line-height: 24px;
-  text-align: center;
+  text-align: left;
 }
 
 .options .link:active {
@@ -430,6 +439,7 @@ table {
 }
 
 .main-delivery {
+  position: relative;
   width: auto;
   height: 300px;
   background: #E5E5E5;
@@ -442,8 +452,16 @@ table {
 }
 
 .block-links {
-  flex-direction: column;
   max-width: 150px;
+  border-right: 5px solid black;
+  padding-right: 130px;
+  height: 270px;
+  top: -50px;
+  position: absolute;
+}
+
+.block-links a {
+  bottom: -40px;
 }
 
 .block-links .link-info:active {
@@ -453,15 +471,16 @@ table {
 }
 
 .delivery-block {
+  position: absolute;
   max-width: 465px;
-  margin-left: 182px;
-
+  left: 542px;
+  top: -62px;
 }
 
 .partners {
   display: flex;
   max-width: 1160px;
-  margin: 150px auto;
+  margin: 430px auto;
   }
 
 .slide {
@@ -511,6 +530,7 @@ table {
 }
 
 .list {
+  list-style: none;
   font-family: "Gilroy",sans-serif;
   font-size: 16px;
   font-weight: bold;
@@ -519,6 +539,15 @@ table {
   line-height: 40px;
   margin-top: 45px;
   margin-bottom: 45px;
+}
+
+.list li::before {
+  display: inline-block;
+  content: "";
+  background: url("../img/oval.svg") 50% 50% no-repeat;
+  width: 8px;
+  height: 8px;
+  margin-right: 10px;
 }
 
 .main-info .link-info a:nth-child(2) {
