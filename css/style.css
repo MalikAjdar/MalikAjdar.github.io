@@ -237,6 +237,9 @@ a {
 }
 
 .index .link-info {
+  position: relative;
+  padding: 10px 0;
+  margin: 20px;
   font-family: "Gilroy", sans-serif;
   font-size: 18px;
   font-weight: bold;
@@ -244,10 +247,12 @@ a {
   letter-spacing: 3.5px;
   line-height: 24px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 
-.index .link-info:hover {
+.index .link-info:hover::before {
+  height: 100%;
   background: #F0C52E;
 }
 
@@ -269,7 +274,13 @@ a {
   display: inline-block;
   content: "";
   background: #FFC600;
+  width: 100%;
+  height: 8px;
+  top: 50%;
+  left: 0;
   z-index: -1;
+  transition: height 0.3s;
+  transform: translateY(-50%);
 }
 
 .one {
@@ -456,27 +467,6 @@ table {
   position: absolute;
 }
 
-.block-links .link-info {
-  position: relative;
-}
-
-.block-links .link-info::before {
-  width: 162px;
-  height: 8px;
-  left: -20px;
-  top: 6px;
-}
-.link-info.credit-slide::before {
-  left: -35px;
-}
-.link-info.warranty-slide::before {
-  left: -25px;
-}
-.link-info .delivery-slide {
-  position: absolute;
-  bottom: 30px;
-}
-
 .block-links a {
   bottom: -40px;
 }
@@ -507,7 +497,7 @@ a.credit-slide {
 .partners {
   display: flex;
   max-width: 1160px;
-  margin: 430px auto;
+  margin: 100px auto;
   }
 
 .slide {
@@ -535,7 +525,7 @@ a.credit-slide {
 .main-info {
   display: flex;
   max-width: 1160px;
-  margin: 300px auto;
+  margin: auto;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: stretch;
@@ -583,27 +573,6 @@ a.credit-slide {
   left: 19px;
 }
 
-a .more {
-  left: 23px;
-}
-
-a .write {
-  left: 29px;
-}
-
-.main-info .link-info::before {
-  width: 260px;
-  height: 8px;
-  top: 6px;
-}
-
-.about .link-info::before {
-  left: -22px;
-}
-
-.descrip .link-info::before {
-  left: -39px;
-}
 
 .maps img {
   margin-top: 30px;
