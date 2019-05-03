@@ -264,18 +264,12 @@ a {
   line-height: 30px;
 }
 
-.link-info {
-  background: url("../img/line.svg") 50% 45% no-repeat;
-  padding: 0 30px;
-}
-
-.block-links .link-info {
-  position: relative;
-}
-
-.link-info .delivery-slide {
+.link-info::before {
   position: absolute;
-  bottom: 30px;
+  display: inline-block;
+  content: "";
+  background: #FFC600;
+  z-index: -1;
 }
 
 .one {
@@ -443,6 +437,7 @@ table {
   width: auto;
   height: 300px;
   background: #E5E5E5;
+  z-index: -2;
 }
 
 .main-delivery section {
@@ -452,12 +447,34 @@ table {
 }
 
 .block-links {
-  max-width: 150px;
+  width: 200px;
   border-right: 5px solid black;
-  padding-right: 130px;
+  padding-right: 60px;
   height: 270px;
   top: -50px;
+  left: 160px;
   position: absolute;
+}
+
+.block-links .link-info {
+  position: relative;
+}
+
+.block-links .link-info::before {
+  width: 162px;
+  height: 8px;
+  left: -20px;
+  top: 6px;
+}
+.link-info.credit-slide::before {
+  left: -35px;
+}
+.link-info.warranty-slide::before {
+  left: -25px;
+}
+.link-info .delivery-slide {
+  position: absolute;
+  bottom: 30px;
 }
 
 .block-links a {
@@ -468,6 +485,16 @@ table {
   color: #F0C52E;
   background: #000000;
   opacity: 1;
+}
+
+a.warranty-slide {
+  bottom: -80px;
+  left: 5px;
+}
+
+a.credit-slide {
+  bottom: -120px;
+  left: 15px;
 }
 
 .delivery-block {
@@ -544,14 +571,38 @@ table {
 .list li::before {
   display: inline-block;
   content: "";
-  background: url("../img/oval.svg") 50% 50% no-repeat;
-  width: 8px;
-  height: 8px;
+  border-radius: 50% ;
+  border: 2px solid #D8D8D8;
+  width: 5px;
+  height: 5px;
   margin-right: 10px;
 }
 
-.main-info .link-info a:nth-child(2) {
-  margin-left: 395px;
+.main-info .link-info {
+  position: relative;
+  left: 19px;
+}
+
+a .more {
+  left: 23px;
+}
+
+a .write {
+  left: 29px;
+}
+
+.main-info .link-info::before {
+  width: 260px;
+  height: 8px;
+  top: 6px;
+}
+
+.about .link-info::before {
+  left: -22px;
+}
+
+.descrip .link-info::before {
+  left: -39px;
 }
 
 .maps img {
@@ -651,13 +702,23 @@ table {
 }
 
 .social-block {
+  position: relative;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+}
+
+.social-block::before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  background: #FFC600;
+  width: 80px;
+  height: 8px;
 }
 
 .social-link {
+  margin-left: 90px;
   opacity: 0.2;
-  width: 50%;
 }
 
 .social::before {
@@ -665,6 +726,7 @@ table {
   content: "";
   width: 32px;
   height: 32px;
+  bottom: 20px;
 }
 
 .fbook::before {
