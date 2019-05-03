@@ -278,7 +278,6 @@ a {
   height: 8px;
   top: 50%;
   left: 0;
-  z-index: -1;
   transition: height 0.3s;
   transform: translateY(-50%);
 }
@@ -443,14 +442,14 @@ table {
   opacity: 1;
 }
 
+.main-delivery {
+  background: #E5E5E5;
+}
 
 .main-delivery .slides {
   max-width: 1160px;
   margin: auto;
   display: flex;
-}
-.main-delivery {
-  background:  #eee;
 }
 
 .block-links {
