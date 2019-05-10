@@ -47,6 +47,10 @@ a {
   color: #000000;
   }
 
+h2 .vissually-hidden {
+visibility: hidden;
+}
+
 .header {
   position:relative;
   width: 1160px;
@@ -445,11 +449,11 @@ table {
   opacity: 1;
 }
 
-.main-delivery {
+.main-slides {
   background: #E5E5E5;
 }
 
-.main-delivery .slides {
+.main-slides .slides {
   max-width: 1160px;
   margin: auto;
   display: flex;
@@ -459,7 +463,6 @@ table {
   width: 200px;
   border-right: 5px solid black;
   padding-right: 60px;
-  height: 270px;
   top: -50px;
   left: 15px;
   position: relative;
@@ -537,7 +540,6 @@ a.credit-slide {
 }
 
 .about {
-  height: 30px;
   flex-basis: auto;
   width: 466px;
     }
@@ -553,8 +555,7 @@ a.credit-slide {
   top: -50px;
 }
 
-.descrip {
-  flex-basis: auto;
+.description {
   width: 560px;
   }
 
@@ -604,7 +605,6 @@ a.credit-slide {
   color: #FFFFFF;
   background: #464646;
   width: auto;
-  height: 300px;
 }
 
 .footer-content {

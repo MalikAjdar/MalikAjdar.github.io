@@ -16,6 +16,7 @@
       <img src="img/logo-device.svg" class="logo-header" alt="Device логотип" width="164" height="36">
 
       <section class="header-main">
+        <h2 class="vissually hidden">меню шапки</h2>
         <form class="search-form" method="post" action="search">
           <label for="appointment-search" class="user search"></label>
           <input id="appointment-search" type="text" name="search" value="" placeholder="Поиск по сайту">
@@ -51,13 +52,15 @@
 
   <main class="main index">
     <section class="main-content">
+      <h2 class="vissuallay-hidden">основной контент</h2>
       <div class="one">
         01
       </div>
       <section class="stick">
+        <h2 class="vissually hidden">о селфи палке</h2>
         <img class="monopod-slider" src="img/slider-1.png" alt="селфи палка" width="384" height="486">
 
-        <section class="specification">
+        <div class="specification">
           <h1>Делай селфи,
             <br>
             как Бен Стиллер!</h1>
@@ -76,7 +79,7 @@
               <th>Материал</th>
             </tr>
           </table>
-        </section>
+        </div>
       </section>
 
       <div class="options">
@@ -89,8 +92,9 @@
       </div>
     </section>
 
-    <section class="main-delivery">
-      <section class="slides">
+    <section class="main-slides">
+      <h2 class="vissually hidden">меню с слайдами</h2>
+      <div class="slides">
         <div class="block-links">
           <a class="link-info delivery-slide" href="#">Доставка</a>
           <a class="link-info warranty-slide" href="#">Гарантия</a>
@@ -101,7 +105,7 @@
           <p>Мы с удовольствием доставим ваш товар прямо квашему подъезду совершенно бесплатно!
             Ведь мы неплохо заработаем, поднимая его на ваш этаж. </p>
         </div>
-      </section>
+      </div>
     </section>
     <div class="partners">
       <a href="#"><img class="slide dji" src="img/dji.png" alt="DJI" width="260" height="100"></a>
@@ -110,6 +114,7 @@
       <a href="#"><img class="slide vive" src="img/vive.png" alt="VIVE" width="260" height="100"></a>
     </div>
     <section class="main-info">
+      <h2>информация о магазине</h2>
       <div class="about">
         <h1>О нас</h1>
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
@@ -126,14 +131,12 @@
         <a class="link-info more" href="#">подробнее о нас</a>
       </div>
 
-      <div class="descrip">
+      <div class="description">
         <h1>Контакты</h1>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
           проверить работоспособность покупки. Всякое бывает.
         </p>
-        <figure class="maps">
-          <img src="img/map.png" alt="maps" width="560" height="222">
-        </figure>
+        <img class="maps" src="img/map.png" alt="maps" width="560" height="222">
         <a class="link-info write" href="#">напишите нам</a>
       </div>
     </section>
@@ -141,13 +144,14 @@
 
   <footer class="footer">
     <section class="footer-content">
+      <h2 class="vissually hidden">контент подвала</h2>
       <img src="img/logo-F.svg" class="logo-footer" alt="Device" width="164" height="36">
       <div class="footer-user">
         <a class="user footer-login" href="login-link">Войти</a>
         <a class="user footer-compare" href="compare.html">Сравнить</a>
         <a class="user footer-cart" href="cart.html">Корзина</a>
       </div>
-      <section class="footer-info">
+      <div class="footer-info">
         <p>г. Москва, ул. Строителей 15</p>
         <ul>
           <li><a class="link footer-delivery" href="delivery.html">Доставка</a></li>
@@ -155,9 +159,9 @@
           <li><a class="link footer-contacts" href="contacts.html">Контакты</a></li>
         </ul>
         <p>Тел.: +7(495)495-95-95</p>
-      </section>
+      </div>
       <section class="social-block">
-        <span></span>
+        <h2 class="vissually hidden">соц. сети</h2>
         <div class="social-link">
           <a class="social fbook" href="#"></a>
           <a class="social insta" href="#"></a>
