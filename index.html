@@ -95,20 +95,31 @@
     <section class="main-slides">
       <h2 class="vissually-hidden">меню с слайдами</h2>
       <div class="slides">
-        <div class="block-links">
-          <a class="link-info delivery-slide" href="#">Доставка</a>
-          <a class="link-info warranty-slide" href="#">Гарантия</a>
-          <a class="link-info credit-slide" href="#">Кредит</a>
+        <input class="visually-hidden" type="radio" id="delivery" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="warranty" name="toggle">
+        <input class="visually-hidden" type="radio" id="credit" name="toggle">
+        <div class="block-button">
+          <label class="link-info delivery" for="delivery">Доставка</label>
+          <label class="link-info warranty" for="warranty">Доставка</label>
+          <label class="link-info credit" for="credit">Доставка</label>
         </div>
-        <div class="delivery-block">
-          <h1>Доставка</h1>
-          <p>Мы с удовольствием доставим ваш товар прямо квашему подъезду совершенно бесплатно!
-            Ведь мы неплохо заработаем, поднимая его на ваш этаж. </p>
-        </div>
-        <form class="search-form" method="post" action="search">
-          <label for="appointment-name" class="name"></label>
-          <input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
-        </form>
+        <ul class="block-slides">
+          <li class="delivery slide">
+            <h1>Доставка</h1>
+            <p>Мы с удовольствием доставим ваш товар прямо квашему подъезду совершенно бесплатно!
+              Ведь мы неплохо заработаем, поднимая его на ваш этаж. </p>
+          </li>
+          <li class="warranty slide">
+            <h1>Гарантия</h1>
+            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. 
+              Товар, не дом, конечно же.</p>
+          </li>
+          <li class="credit slide">
+            <h1>Кредит</h1>
+            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные 
+              условия кредита. Выгодные для нашего банка, разумеется.</p>
+          </li>
+        </ul>
       </div>
     </section>
     <div class="partners">
