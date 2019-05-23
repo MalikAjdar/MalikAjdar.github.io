@@ -82,7 +82,7 @@
         </div>
       </section>
 
-      <div class="options">
+      <div class="catalog-sections">
         <a class="link virt" href="#">Виртуальная реальность</a>
         <a class="link monopod" href="#">Моноподы для селфи</a>
         <a class="link camera" href="#">Экшн-камеры</a>
@@ -91,30 +91,29 @@
         <a class="link drone" href="#">Квадрокоптеры</a>
       </div>
     </section>
-
-    <section class="main-slides">
-      <h2 class="vissually-hidden">меню с слайдами</h2>
-      <div class="slides">
+    <section class="slider">
+      <div class="container">
+        <h2 class="visually-hidden">Преимущества</h2>
         <input class="visually-hidden" type="radio" id="delivery" name="toggle" checked>
         <input class="visually-hidden" type="radio" id="warranty" name="toggle">
         <input class="visually-hidden" type="radio" id="credit" name="toggle">
-        <div class="block-button">
-          <label class="link-info delivery" for="delivery">Доставка</label>
-          <label class="link-info warranty" for="warranty">Доставка</label>
-          <label class="link-info credit" for="credit">Доставка</label>
+        <div class="slider-controls">
+          <label class="slider-controls-item slider-controls-delivery" for="delivery">Доставка</label>
+          <label class="slider-controls-item slider-controls-warranty" for="warranty">Гарантия</label>
+          <label class="slider-controls-item slider-controls-credit" for="credit">Кредит</label>
         </div>
-        <ul class="block-slides">
-          <li class="delivery slide">
+        <ul class="slider-list">
+          <li class="slider-delivery">
             <h1>Доставка</h1>
             <p>Мы с удовольствием доставим ваш товар прямо квашему подъезду совершенно бесплатно!
-              Ведь мы неплохо заработаем, поднимая его на ваш этаж. </p>
+              Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </li>
-          <li class="warranty slide">
+          <li class="slider-warranty">
             <h1>Гарантия</h1>
             <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. 
               Товар, не дом, конечно же.</p>
           </li>
-          <li class="credit slide">
+          <li class="slider-credit">
             <h1>Кредит</h1>
             <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные 
               условия кредита. Выгодные для нашего банка, разумеется.</p>
@@ -122,11 +121,12 @@
         </ul>
       </div>
     </section>
+
     <div class="partners">
-      <a href="#"><img class="slide dji" src="img/dji.png" alt="DJI" width="260" height="100"></a>
-      <a href="#"><img class="slide spg" src="img/spg.png" alt="SPGadgets" width="260" height="100"></a>
-      <a href="#"><img class="slide gopro" src="img/gopro.png" alt="GoPro" width="260" height="100"></a>
-      <a href="#"><img class="slide vive" src="img/vive.png" alt="VIVE" width="260" height="100"></a>
+      <a href="#"><img class="label dji" src="img/dji.png" alt="DJI" width="260" height="100"></a>
+      <a href="#"><img class="label spg" src="img/spg.png" alt="SPGadgets" width="260" height="100"></a>
+      <a href="#"><img class="label gopro" src="img/gopro.png" alt="GoPro" width="260" height="100"></a>
+      <a href="#"><img class="label vive" src="img/vive.png" alt="VIVE" width="260" height="100"></a>
     </div>
     <section class="main-info">
       <h2 class="vissually-hidden">информация о магазине</h2>
@@ -146,7 +146,7 @@
         <a class="link-info more" href="#">подробнее о нас</a>
       </div>
 
-      <div class="description">
+      <div class="contacts">
         <h1>Контакты</h1>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
           проверить работоспособность покупки. Всякое бывает.
