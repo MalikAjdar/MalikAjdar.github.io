@@ -470,7 +470,7 @@ table {
 
 .slider-controls {
   position: absolute;
-  left: 50%;
+  left: 7%;
   bottom: 104px;
   z-index: 100;
 
@@ -479,7 +479,7 @@ table {
 
   text-align: center;
   font-size: 0;
-  transform: translateX(-50%);
+  transform: rotate(90deg);
 }
 
 .slider-controls label {
@@ -507,32 +507,43 @@ table {
 
   background: #ffffff;
 
-  border-radius: 50%;
+  border-radius: 0;
 }
 
 .slider-list {
-  margin: 0;
-  padding: 0;
-
+  width: 38%;
+  margin-left: 300px;
   list-style: none;
 }
 
+.slider-item {
+  display: none;
+}
 
-#delivery:checked ~ .slider-list .slider-delivery {
+.slider-item:nth-child(1) {
+}
+
+.slider-item:nth-child(2) {
+}
+
+.slider-item:nth-child(3) {
+}
+
+#delivery:checked ~ .slider-list .slider-item:nth-child(1) {
   display: block;
 }
 
-#warranty:checked ~ .slider-list .slider-warranty {
+#warranty:checked ~ .slider-list .slider-item:nth-child(2) {
   display: block;
 }
 
-#credit:checked ~ .slider-list .slider-credit {
+#credit:checked ~ .slider-list .slider-item:nth-child(3) {
   display: block;
 }
 
-#delivery:checked ~ .slider-controls .slider-controls-delivery::before,
-#warranty:checked ~ .slider-controls .slider-controls-warranty::before,
-#credit:checked ~ .slider-controls .slider-controls-credit::before {
+#delivery:checked ~ .slider-controls .slider-controls-item--1::before,
+#warranty:checked ~ .slider-controls .slider-controls-item--2::before,
+#credit:checked ~ .slider-controls .slider-controls-item--3::before {
   content: "";
   position: absolute;
   left: 50%;
