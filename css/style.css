@@ -499,7 +499,7 @@ table {
 
 .slider-list {
   position: relative;
-  width: 40%;
+  width: 100%;
   left: 180px;
   top: -78px;
   list-style: none;
@@ -509,17 +509,27 @@ table {
   display: none;
 }
 
-.slide-delivery::after {
+.slider-item p {
+  max-width: 47%;
+}
+
+.slide-credit p {
+  max-width: 49%;
+}
+
+.slide-delivery {
   position: absolute;
-  content: "";
-  display: inline-block;
-  background: url("../img/delivery.svg") 50% 50% no-repeat;
+  background: url("../img/delivery.svg") 70% 75% no-repeat;
 }
 
-.slider-item:nth-child(2) {
+.slide-warranty {
+  position: absolute;
+  background: url("../img/warranty.svg") 70% 75% no-repeat;
 }
 
-.slider-item:nth-child(3) {
+.slide-credit {
+  position: absolute;
+  background: url("../img/credit.svg") 70% 65% no-repeat;
 }
 
 #delivery:checked ~ .slider-list .slider-item:nth-child(1) {
