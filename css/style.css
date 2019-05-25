@@ -448,71 +448,61 @@ table {
 }
 
 /*-------------------*/
+.slider {
+  position: relative;
+  background-color: #E5E5E5;
+}
+
 .container {
+  display: flex;
   width: 1160px;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
+  margin: auto;
 }
 
 .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
-  clip: rect(0, 0, 0, 0);
-}
-
-.slider {
-  position: relative;
-
-  background-color: #E5E5E5;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
 }
 
 .slider-controls {
-  position: absolute;
-  left: 7%;
-  bottom: 104px;
-  z-index: 100;
-
-  width: 160px;
-  height: 18px;
-
-  text-align: center;
-  font-size: 0;
-  transform: rotate(90deg);
-}
-
-.slider-controls label {
+  max-width: 10%;
+  border-right: 5px solid black;
+  padding-right: 60px;
+  height: 270px;
+  top: -50px;
+  left: 15px;
   position: relative;
-
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  padding: 8px;
-
-  border-radius: 50%;
-  cursor: pointer;
+}
+.slider-controls .link-info:active {
+  color: #F0C52E;
+  background: #000000;
+  opacity: 1;
 }
 
-.slider-controls label::after {
-  content: "";
+.slider-controls .link-info {
+  bottom: -40px;
+}
 
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  z-index: 1;
-
-  width: 18px;
-  height: 18px;
-
-  background: #ffffff;
-
-  border-radius: 0;
+.slider-controls .link-info:nth-child(2) {
+  bottom: -80px;
+  left: 5px;
+}
+.slider-controls .link-info:nth-child(3) {
+  bottom: -120px;
+  left: 15px;
 }
 
 .slider-list {
+  position: relative;
   width: 38%;
-  margin-left: 300px;
+  left: 180px;
+  top: -78px;
   list-style: none;
 }
 
@@ -541,20 +531,12 @@ table {
   display: block;
 }
 
-#delivery:checked ~ .slider-controls .slider-controls-item--1::before,
-#warranty:checked ~ .slider-controls .slider-controls-item--2::before,
-#credit:checked ~ .slider-controls .slider-controls-item--3::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 2;
-  width: 4px;
-  height: 4px;
-  margin: -4px;
-  background-color: inherit;
-  border: 2px solid #c1c1c1;
-  border-radius: 50%;
+#delivery:checked ~ .slider-controls .slider-controls-item--1:active,
+#warranty:checked ~ .slider-controls .slider-controls-item--2:active,
+#credit:checked ~ .slider-controls .slider-controls-item--3:active {
+  color: #F0C52E;
+  background-color: #000000;
+  opacity: 1;
 }
 /*------*/
 .partners {
