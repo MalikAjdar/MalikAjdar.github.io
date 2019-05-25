@@ -242,7 +242,7 @@ a {
 
 .index .link-info {
   position: relative;
-  padding: 10px 0;
+  padding: 15px;
   font-family: "Gilroy", sans-serif;
   font-size: 18px;
   font-weight: bold;
@@ -479,10 +479,9 @@ table {
   left: 15px;
   position: relative;
 }
-.slider-controls .link-info:active {
+.slider-controls .link-info:active::before {
   color: #F0C52E;
   background: #000000;
-  opacity: 1;
 }
 
 .slider-controls .link-info {
@@ -531,9 +530,9 @@ table {
   display: block;
 }
 
-#delivery:checked ~ .slider-controls .slider-controls-item--1:active,
-#warranty:checked ~ .slider-controls .slider-controls-item--2:active,
-#credit:checked ~ .slider-controls .slider-controls-item--3:active {
+#delivery:checked ~ .slider-controls .link-info[for="delivery"],
+#warranty:checked ~ .slider-controls .link-info[for="warranty"],
+#credit:checked ~ .slider-controls .link-info[for="credit"] {
   color: #F0C52E;
   background-color: #000000;
   opacity: 1;
