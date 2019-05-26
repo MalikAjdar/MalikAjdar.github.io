@@ -182,7 +182,7 @@ a {
 
 .main-content {
   max-width: 1160px;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 /*inner-->*/
 .breadcrumbs {
@@ -283,7 +283,101 @@ a {
   z-index: -1;
 }
 
-.one {
+.main-content {
+position: relative;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
+}
+
+.block-controls {
+  position: absolute;
+  left: 50%;
+  bottom: 104px;
+  z-index: 100;
+
+  width: 160px;
+  height: 18px;
+
+  text-align: center;
+  font-size: 0;
+  transform: translateX(-50%);
+}
+
+.block-controls label {
+  position: relative;
+
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  padding: 8px;
+
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.block-controls label::after {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+
+  width: 18px;
+  height: 18px;
+
+  background: #ffffff;
+
+  border-radius: 50%;
+}
+
+.device-list {
+  list-style: none;
+}
+
+.device-item {
+  display: none;
+}
+
+#monopod:checked ~ .device-list .monopod-block {
+  display: block;
+}
+
+#bracelet:checked ~ .device-list .bracelet-block {
+  display: block;
+}
+
+#drone:checked ~ .device-list .drone-block {
+  display: block;
+}
+
+#monopod:checked ~ .device-blocks .monopod-block::before,
+#bracelet:checked ~ .device-blocks .bracelet-block::before,
+#drone:checked ~ .device-blocks .drone-block::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  width: 4px;
+  height: 4px;
+  margin: -4px;
+  background-color: inherit;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
+}
+
+
+.number {
   display: flex;
   justify-content: flex-end;
   font-family: "Gilroy", sans-serif;
@@ -299,17 +393,14 @@ a {
   margin-bottom: -62px;
 }
 
-.stick {
-  position: relative;
-  margin-bottom: 50px;
-}
-
 .specification {
   max-width: 510px;
   margin-left: 560px;
 }
 
-.monopod-slider {
+.monopod-block,
+.clock-block,
+.drone-block {
   position: absolute;
   top: -80px;
   left: 85px;
@@ -453,17 +544,6 @@ table {
   display: flex;
   width: 1160px;
   margin: auto;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0)
 }
 
 .slider-controls {
