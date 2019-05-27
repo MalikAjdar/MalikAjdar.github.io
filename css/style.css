@@ -280,7 +280,11 @@ a {
 }
 
 .main-content {
-position: relative;
+  position: relative;
+}
+
+ul.device-sliders {
+    padding: 0;
 }
 
 .device-container {
@@ -289,108 +293,82 @@ position: relative;
   margin: auto;
 }
 
-.visually-hidden {
+.controls-slide {
   position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0)
+  font-size: 0;
+  bottom: 37%;
+  right: 11%;
 }
 
-.block-controls {
-  position: absolute;
-  width: 10%;
-  text-align: right;
-  transform: translateX(-50%);
-}
-
-.block-controls label {
-  position: relative;
+.controls-slide label {
   display: inline-block;
-  width: 18px;
-  height: 18px;
-  padding: 8px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.block-controls label::after {
-  content: "";
-
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  z-index: 1;
-
-  width: 18px;
-  height: 18px;
-
-  background: #000000;
-
+  width: 10px;
+  height: 10px;
+  margin-right: 20px;
+  border: 1px solid #000000;
   border-radius: 50%;
 }
 
-.device-list {
-  position: relative;
-  top: -16px;
-  left: -40px;
+#product-1:checked ~ .device-slider .device-item:nth-child(1) {
+  display: block;
+}
+
+#product-2:checked ~ .device-slider .device-item:nth-child(2) {
+  display: block;
+}
+
+#product-3:checked ~ .device-slider .device-item:nth-child(3) {
+  display: block;
+}
+
+#monopod:checked ~ .controls-slide .controls-item[for="monopod"],
+#bracelet:checked ~ .controls-slide .controls-item[for="bracelet"],
+#drone:checked ~ .controls-slide .controls-item[for="drone"]
+{
+position: absolute;
+left: 50%;
+top: 50%;
+width: 4px;
+height: 4px;
+border: 1px solid #000000;
+border-radius: 50%
+}
+
+.device-slider {
   list-style: none;
 }
 
-.device-item {
-  position: absolute;
-  display: none;
-}
-
-#monopod:checked ~ .device-list .device-item:nth-child(1) {
-  display: block;
-}
-
-#bracelet:checked ~ .device-list .device-item:nth-child(2) {
-  display: block;
-}
-
-#drone:checked ~ .device-list .device-item:nth-child(3) {
-  display: block;
-}
-
-#monopod:checked ~ .device-list .monopod-block [for="monopod"],
-#bracelet:checked ~ .device-list .bracelet-block [for="bracelet"],
-#drone:checked ~ .device-list .drone-block [for="drone"] {
-  position: absolute;
-  width: 4px;
-  height: 4px;
-  margin: -4px;
-  background-color: #000000;
-  border: 2px solid #c1c1c1;
-  border-radius: 50%;
-}
-
-
 .number {
-  display: flex;
-  justify-content: flex-end;
+  position: absolute;
   font-family: "Gilroy", sans-serif;
   font-size: 180px;
   color: #FFFFFF;
   letter-spacing: 0.36px;
   font-weight: bold;
-  margin-right: 40px;
   background-image: linear-gradient(#F7E296,#F7E296);
   width: 1160px;
   height: 140px;
-  margin: auto;
   margin-bottom: -62px;
+  text-align: right;
+}
+
+.device-item {
+  width: 100%;
+  margin-bottom: 50px;
+  display: none;
 }
 
 .specification {
-  max-width: 510px;
-  margin-left: 560px;
+  max-width: 45%;
+  margin-left: 55%;
+  padding-top: 77px;
 }
 
+.monopod-slider {
+  position: absolute;
+  top: 34px;
+  left: 215px;
+}
 
 table {
   border-spacing: 50px 30px;
@@ -418,6 +396,8 @@ table {
 
 .catalog-sections {
   display: flex;
+  width: 1160px;
+  margin: auto;
   justify-content: space-between;
   margin-bottom: 150px;
 }
@@ -530,6 +510,17 @@ table {
   display: flex;
   width: 1160px;
   margin: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
 }
 
 .slider-controls {
@@ -822,7 +813,7 @@ table {
 }
 
 .social-link {
-  margin-left: 90px;
+  margin-left: 47%;
   opacity: 0.2;
 }
 
