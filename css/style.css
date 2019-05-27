@@ -180,10 +180,6 @@ a {
 }
 */
 
-.main-content {
-  max-width: 1160px;
-  margin: 50px auto;
-}
 /*inner-->*/
 .breadcrumbs {
   display: inline-block;
@@ -287,6 +283,12 @@ a {
 position: relative;
 }
 
+.device-container {
+  display: flex;
+  width: 1160px;
+  margin: auto;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -300,26 +302,17 @@ position: relative;
 
 .block-controls {
   position: absolute;
-  left: 50%;
-  bottom: 104px;
-  z-index: 100;
-
-  width: 160px;
-  height: 18px;
-
-  text-align: center;
-  font-size: 0;
+  width: 10%;
+  text-align: right;
   transform: translateX(-50%);
 }
 
 .block-controls label {
   position: relative;
-
   display: inline-block;
   width: 18px;
   height: 18px;
   padding: 8px;
-
   border-radius: 50%;
   cursor: pointer;
 }
@@ -335,43 +328,43 @@ position: relative;
   width: 18px;
   height: 18px;
 
-  background: #ffffff;
+  background: #000000;
 
   border-radius: 50%;
 }
 
 .device-list {
+  position: relative;
+  top: -16px;
+  left: -40px;
   list-style: none;
 }
 
 .device-item {
+  position: absolute;
   display: none;
 }
 
-#monopod:checked ~ .device-list .monopod-block {
+#monopod:checked ~ .device-list .device-item:nth-child(1) {
   display: block;
 }
 
-#bracelet:checked ~ .device-list .bracelet-block {
+#bracelet:checked ~ .device-list .device-item:nth-child(2) {
   display: block;
 }
 
-#drone:checked ~ .device-list .drone-block {
+#drone:checked ~ .device-list .device-item:nth-child(3) {
   display: block;
 }
 
-#monopod:checked ~ .device-blocks .monopod-block::before,
-#bracelet:checked ~ .device-blocks .bracelet-block::before,
-#drone:checked ~ .device-blocks .drone-block::before {
-  content: "";
+#monopod:checked ~ .device-list .monopod-block [for="monopod"],
+#bracelet:checked ~ .device-list .bracelet-block [for="bracelet"],
+#drone:checked ~ .device-list .drone-block [for="drone"] {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 2;
   width: 4px;
   height: 4px;
   margin: -4px;
-  background-color: inherit;
+  background-color: #000000;
   border: 2px solid #c1c1c1;
   border-radius: 50%;
 }
@@ -398,13 +391,6 @@ position: relative;
   margin-left: 560px;
 }
 
-.monopod-block,
-.clock-block,
-.drone-block {
-  position: absolute;
-  top: -80px;
-  left: 85px;
-}
 
 table {
   border-spacing: 50px 30px;
