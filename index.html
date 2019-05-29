@@ -54,9 +54,9 @@
     <section class="main-content">
       <div class="device-container">
         <h2 class="visually-hidden">устройства</h2>
-        <input class="visually-hidden" type="radio" id="monopod" name="toggle" checked>
-        <input class="visually-hidden" type="radio" id="bracelet" name="toggle">
-        <input class="visually-hidden" type="radio" id="drone" name="toggle">
+        <input class="visually-hidden" type="radio" id="monopod" name="switch" checked>
+        <input class="visually-hidden" type="radio" id="bracelet" name="switch">
+        <input class="visually-hidden" type="radio" id="drone" name="switch">
         <div class="controls-slide">
           <label class="controls-item controls-item--1" for="monopod">Первый</label>
           <label class="controls-item controls-item--2" for="bracelet">Второй</label>
@@ -67,54 +67,52 @@
             <span class="number">
               01
             </span>
-            <div class="stick">
-              <img class="monopod-slider painting" src="img/slider-1.png" alt="селфи палка" width="384" height="486">
+            <img class="monopod-slider painting" src="img/slider-1.png" alt="селфи палка" width="384" height="486">
 
-              <div class="specification">
-                <h1>Делай селфи,
-                  <br>
-                  как Бен Стиллер!</h1>
-                <p>Самая длинная палка для селфи доступна в нашем магазине.</p>
-                <p>Восемь (Восемь, Карл!) метров длиной, и весом всего 5 киллограмм.</p>
-                <a class="link-info" href="#">подробнее</a>
-                <table>
-                  <tr class="settings">
-                    <td>8,5 м</td>
-                    <td>5 кг</td>
-                    <td>Карбон</td>
-                  </tr>
-                  <tr class="settings">
-                    <th>Длина палки</th>
-                    <th>Вес палки</th>
-                    <th>Материал</th>
-                  </tr>
-                </table>
-              </div>
+            <div class="specification">
+              <h1>Делай селфи,
+                <br>
+                как Бен Стиллер!</h1>
+              <p>Самая длинная палка для селфи доступна в нашем магазине.</p>
+              <p>Восемь (Восемь, Карл!) метров длиной, и весом всего 5 киллограмм.</p>
+              <a class="link-info" href="#">подробнее</a>
+              <table>
+                <tr class="settings">
+                  <td>8,5 м</td>
+                  <td>5 кг</td>
+                  <td>Карбон</td>
+                </tr>
+                <tr class="settings">
+                  <th>Длина палки</th>
+                  <th>Вес палки</th>
+                  <th>Материал</th>
+                </tr>
+              </table>
             </div>
           </li>
-
+      </div>
+    </section>
+    <!--
           <li class="device-item bracelet-block">
             <span class="number">
               02
             </span>
-            <div class="bracelet">
-              <img class="bracelet-slider painting" src="img/slider-2.png" alt="браслет" width="345" height="485">
-              <div class="specification">
-                <h1>Худеем
-                  <br>
-                  правильно</h1>
-                <p>Мотивирующие фитнес-браслеты помогут найти в себе силы</p>
-                <p>не пропускать занятия и соблюдать диету.</p>
-                <a class="link-info" href="#">подробнее</a>
-                <table>
-                  <tr class="settings">
-                    <td>48 часов</td>
-                  </tr>
-                  <tr class="settings">
-                    <th>без перезарядки</th>
-                  </tr>
-                </table>
-              </div>
+            <img class="bracelet-slider painting" src="img/slider-2.png" alt="браслет" width="345" height="485">
+            <div class="specification">
+              <h1>Худеем
+                <br>
+                правильно</h1>
+              <p>Мотивирующие фитнес-браслеты помогут найти в себе силы</p>
+              <p>не пропускать занятия и соблюдать диету.</p>
+              <a class="link-info" href="#">подробнее</a>
+              <table>
+                <tr class="settings">
+                  <td>48 часов</td>
+                </tr>
+                <tr class="settings">
+                  <th>без перезарядки</th>
+                </tr>
+              </table>
             </div>
           </li>
 
@@ -122,31 +120,30 @@
             <span class="number">
               03
             </span>
-            <div class="drone">
-              <img class="drone-slider painting" src="img/slider-3.png" alt="браслет" width="526" height="334"> mf
-              <div class="specification">
-                <h1>Порхает как бабочка,
-                  <br>
-                  жалит как пчела</h1>
-                <p>Это обычный, на первый взгляд, квадрокоптер оснащен</p>
-                <p>мощным лазером, замаскированным под стандартную камеру.</p>
-                <a class="link-info" href="#">подробнее</a>
-                <table>
-                  <tr class="settings">
-                    <td>800 м</td>
-                    <td>50 м</td>
-                  </tr>
-                  <tr class="settings">
-                    <th>дальность полета</th>
-                    <th>радиус поражения</th>
-                  </tr>
-                </table>
-              </div>
+            <img class="drone-slider painting" src="img/slider-3.png" alt="браслет" width="526" height="334"> mf
+            <div class="specification">
+              <h1>Порхает как бабочка,
+                <br>
+                жалит как пчела</h1>
+              <p>Это обычный, на первый взгляд, квадрокоптер оснащен</p>
+              <p>мощным лазером, замаскированным под стандартную камеру.</p>
+              <a class="link-info" href="#">подробнее</a>
+              <table>
+                <tr class="settings">
+                  <td>800 м</td>
+                  <td>50 м</td>
+                </tr>
+                <tr class="settings">
+                  <th>дальность полета</th>
+                  <th>радиус поражения</th>
+                </tr>
+              </table>
             </div>
           </li>
         </ul>
       </div>
     </section>
+  -->
 
     <div class="catalog-sections">
       <a class="link virt" href="#">Виртуальная реальность</a>

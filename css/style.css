@@ -279,16 +279,7 @@ a {
   z-index: -1;
 }
 
-.main-content {
-  position: relative;
-}
-
-ul.device-sliders {
-    padding: 0;
-}
-
 .device-container {
-  display: flex;
   width: 1160px;
   margin: auto;
 }
@@ -325,16 +316,22 @@ ul.device-sliders {
 #bracelet:checked ~ .controls-slide .controls-item[for="bracelet"],
 #drone:checked ~ .controls-slide .controls-item[for="drone"]
 {
-position: absolute;
-left: 50%;
-top: 50%;
-width: 4px;
-height: 4px;
-border: 1px solid #000000;
-border-radius: 50%
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 4px;
+  height: 4px;
+  border: 1px solid #000000;
+  border-radius: 50%
+}
+
+ul.device-sliders {
+    padding: 0;
 }
 
 .device-slider {
+  display: flex;
+  position: relative;
   list-style: none;
 }
 
@@ -350,21 +347,19 @@ border-radius: 50%
   height: 140px;
   margin-bottom: -62px;
   text-align: right;
+  top: 200px;
 }
 
 .device-item {
   width: 100%;
-  margin-bottom: 50px;
-  display: none;
 }
 
 .specification {
   max-width: 45%;
-  margin-left: 55%;
   padding-top: 77px;
 }
 
-.monopod-slider {
+.painting {
   position: absolute;
   top: 34px;
   left: 215px;
